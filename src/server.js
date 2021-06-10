@@ -23,6 +23,10 @@ app.post('/participants', (req,res) => {
     res.status(200)
 })
 
+app.get('/participants', (req,res) => {
+    res.send(users)
+})
+
 app.listen(4000, ()=>{
     console.log('Server running on port 4000')
 })
